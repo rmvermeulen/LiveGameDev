@@ -1,6 +1,6 @@
 extends PanelContainer
 
-export (GDScript) var initial_text_source: GDScript = null
+export (GDScript) var initial_script: GDScript
 
 onready var editor: TextEdit = find_node	("TextEdit")
 onready var run_button: Button = find_node("RunButton")
@@ -42,8 +42,9 @@ func _create_run_shortcut():
 	run_button.shortcut_in_tooltip = true
 	
 func _load_initial_script():
-	if not initial_text_source:
+	if not initial_script:
 		return
-	editor.text = initial_text_source.source_code
+	prints(initial_script)
+	editor.text = initial_script.source_code
 	
 # end
