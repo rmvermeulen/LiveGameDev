@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://LiveEnv.gd" type="Script" id=1]
-[ext_resource path="res://CodeEditor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ObjectInspector.tscn" type="PackedScene" id=2]
 [ext_resource path="res://InitialScript.gd" type="Script" id=3]
 
 [sub_resource type="CubeMesh" id=1]
@@ -27,5 +27,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4831, -0.794271, 31.7959 )
 mesh = SubResource( 1 )
 material/0 = null
 
-[node name="CodeEditor" parent="." instance=ExtResource( 2 )]
-initial_script = ExtResource( 3 )
+[node name="ObjectInspector" parent="." instance=ExtResource( 2 )]

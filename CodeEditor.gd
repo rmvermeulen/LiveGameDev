@@ -1,5 +1,6 @@
 extends PanelContainer
 
+export (String) var active_script
 export (GDScript) var initial_script: GDScript
 
 onready var editor: TextEdit = find_node	("TextEdit")
